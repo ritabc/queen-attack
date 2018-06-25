@@ -8,4 +8,7 @@ describe('#queen_attack') do
   it('check that the queen can attack a piece horizontal to her') do
     expect(queen_attack([1,1],[5,1])).to(eq(true))
   end
+  it('check check that the queen can attack a piece vertical to her') do
+    expect(queen_attack([1,1],[1,5])).to(eq(true))
+  end
 end
