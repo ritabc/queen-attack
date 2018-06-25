@@ -17,4 +17,7 @@ describe('#queen_attack') do
   it('check that the queen can attack a piece diagonal to her') do
     expect(queen_attack([5,3],[2,6])).to(eq(true))
   end
+  it('returns false if none of the above rules match') do
+    expect(queen_attack([5,4],[2,6])).to(eq(false))
+  end
 end
